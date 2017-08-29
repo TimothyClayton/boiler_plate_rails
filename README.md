@@ -4,6 +4,7 @@
 - RSpec
 - FactoryGirl
 - Capybara
+- DatabaseCleaner
 - Rubocop
 - Brakeman
 - BundlerAudit
@@ -13,7 +14,7 @@
 - HAML
 - SASS
 - Vital (lite but capable responsive framework)
-- Autoprefixer (autogen for browser prefixes in CSS)
+- Autoprefixer (autogen for CSS browser prefixes)
 
 ## Setup
 
@@ -26,7 +27,7 @@ Currently using MRI ruby `2.4.0`. The version is managed in the `.ruby-version` 
 Replace all instances of `BoilerPlateRails` and `boiler_plate_rails` with `YourAppName` and `your_app_name`.
 
 ### Gemfiles
-A `.ruby-gemset` file located in the application root has been added for those using RVM or .rbenv  
+A `.ruby-gemset` file located in the application root has been added for those using RVM.
 
 Create a gemset with: `rvm ruby-2.4.0@name_of_app --create --rvmrc`  
 The resulting `.rvmrc` file is git ignored.  
@@ -54,6 +55,8 @@ After entering the console with `rails c`, run `AwesomePrint.irb!` to have all o
 * HAML is used for views.  
 
 * Vital framework is used for responsiveness: [vital docs](https://vitalcss.com/components)  
+
+* Autoprefixer - no need to hand code browser prefixes. See `config/autoprefixer.yml` for current configuration.
 
 ### Test/Code Quality
 
