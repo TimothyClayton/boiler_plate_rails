@@ -1,10 +1,12 @@
 # README
 ## Tools/Features
+- PostgreSQL
 - RVM
 - RSpec
 - FactoryGirl
 - Capybara
 - DatabaseCleaner
+- SimpleCov
 - Rubocop
 - Brakeman
 - BundlerAudit
@@ -30,9 +32,9 @@ Replace all instances of `BoilerPlateRails` and `boiler_plate_rails` with `YourA
 A `.ruby-gemset` file located in the application root has been added for those using RVM.
 
 Create a gemset with: `rvm ruby-2.4.0@name_of_app --create --rvmrc`  
-The resulting `.rvmrc` file is git ignored.  
+The resulting `.rvmrc` file is git-ignored.  
 
-Add the single line `name_of_app` to `.ruby-gemset`  
+Replace `boiler_plate_rails` with `name_of_app` in `.ruby-gemset`  
 ### Pull in Dependencies
 Run `bundle`
 
@@ -78,6 +80,8 @@ Rubocop is used for code quality.
 * Use `rubocop` to see how the code compares to the Ruby Style Guide.  
 * Run my favorite command `rubocop -R -a` for Rubocop to automatically fix what it knows how to fix.  
 
+#### SimpleCov
+Used for spec coverage. The generated coverage/ directory is git-ignored.
 #### BONUS!
 Rake files have been added to run all tests and code quality tools with one command. Run `rake` in the terminal, and the following will be executed in order:  
 1. All specs are run

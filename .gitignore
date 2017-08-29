@@ -12,6 +12,9 @@
 .env.test
 .env.production
 
+# Ignore coverage
+coverage
+
 # file that sometimes appears from starting postgres locally
 postgresql_log
 
