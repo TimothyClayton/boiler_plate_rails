@@ -1,0 +1,15 @@
+flexbox: no-2009
+browsers:
+  - "Android 2.3"
+  - "Android >= 4"
+  - "ChromeAndroid >= 56"
+  - "Chrome >= 20"
+  - "Firefox >= 24"
+  - "Explorer >= 8"
+  - "ExplorerMobile >= 10"
+  - "Edge >= 13"
+  - "iOS >= 6"
+  - "Opera >= 12"
+  - "OperaMini all"
+  - "Safari >= 6"
+  - "Samsung 4"

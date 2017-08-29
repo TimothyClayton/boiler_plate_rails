@@ -1,0 +1,108 @@
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - Gemfile
+    - config/**/*
+    - db/**/*
+    - bin/**/*
+    - spec/rails_helper.rb
+
+  TargetRubyVersion: 2.4
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/LineEndConcatenation:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: aligned
+
+Style/GuardClause:
+  Exclude:
+
+Style/RedundantBegin:
+  Exclude:
+
+Style/RescueModifier:
+  Exclude:
+
+Layout/AlignParameters:
+  Exclude:
+
+Style/ConditionalAssignment:
+  Exclude:
+
+Layout/AlignHash:
+  Exclude:
+
+Style/PredicateName:
+  Exclude:
+
+Layout/IndentArray:
+  Exclude:
+
+Lint/UnusedBlockArgument:
+  Enabled: true
+  Exclude:
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - bin/spring
+
+Metrics/AbcSize:
+  Max: 16
+  Exclude:
+    - db/migrate/**/*
+    - spec/**/*
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/ClassLength:
+  Exclude:
+
+Metrics/ModuleLength:
+  Exclude:
+
+Metrics/ParameterLists:
+  Max: 7
+
+Security/Eval:
+  Exclude:
+    - spec/**/*
+
+Lint/NestedMethodDefinition:
+  Exclude:
+
+Lint/HandleExceptions:
+  Exclude:
+    - spec/**/*
+
+Lint/ParenthesesAsGroupedExpression:
+  Exclude:
+
+# rubocop has issues with * used as array splats in some places
+Lint/AmbiguousOperator:
+  Exclude:
+
+StringLiterals:
+  Enabled: false
+
+Rails/Output:
+  Exclude:
+    - db/migrate/**/*
+    - config/environment.rb
