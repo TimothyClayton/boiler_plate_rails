@@ -1,4 +1,19 @@
 # README
+## Tools/Features
+- RVM
+- RSpec
+- FactoryGirl
+- Capybara
+- Rubocop
+- Brakeman
+- BundlerAudit
+- Dotenv
+- Byebug
+- AwesomePrint
+- HAML
+- SASS
+- Vital (lite but capable responsive framework)
+- Autoprefixer (autogen for browser prefixes in CSS)
 
 ## Setup
 
@@ -41,7 +56,6 @@ After entering the console with `rails c`, run `AwesomePrint.irb!` to have all o
 * Vital framework is used for responsiveness: [vital docs](https://vitalcss.com/components)  
 
 ### Test/Code Quality
-#### NOTE: This is boiler plate preference that is likely overkill. It's been added for extensible development convenience should it ever be needed. Production performance is unaffected by these tools.  
 
 #### RSpec
 * Run the entire suite with `rspec spec`
@@ -67,3 +81,7 @@ Rake files have been added to run all tests and code quality tools with one comm
 2. Brakeman check is run  
 3. BundlerAudit check is run  
 4. Rubocop is run
+
+Failing specs prevent the other checks from running.
+### Secret Key (Production)
+You'll need a `SECRET_KEY_BASE` declared in `.env`. Generate it with the command `rake secret`.

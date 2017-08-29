@@ -42,7 +42,6 @@ gem 'vital'
 # add browser prefixes to css properties
 gem 'autoprefixer-rails'
 # markup shorthand
-gem 'haml'
 gem 'haml-rails'
 
 group :development, :test do
